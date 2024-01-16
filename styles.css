@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Digital;
+    src: url(digital-7.ttf);
+}  
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #212121;
+    font-family: Digital;
+    position: relative;
+}
+
+body .olympics-logo{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body .bg-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: opacity(0.5);
+}
+
+.top-label{
+    margin-bottom: 2rem;
+}
+
+#countdown {
+    z-index: 1;
+    font-family: "Digital", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    min-width: 280px;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+}
+
+#countdown p{
+    color: white;
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+
+.row .item{
+    width: 25%;
+    text-align: center;
+}
+
+.content{
+    font-size: 7rem;
+}
+
+.labels span{
+    width: 25%;
+}
+
+@media (max-width: 480px) {
+    .row{
+        gap: .2rem;
+    }
+    .labels{
+        font-size: 1rem;
+    }
+    #countdown {
+        font-family: "Digital", sans-serif;
+        font-size: 2em;
+        text-align: center;
+        min-width: 280px;
+        max-width: 600px;
+        width: 100%;
+        padding: .8rem;
+    }
+    .content{
+        font-size: 4rem;
+    }
+}
